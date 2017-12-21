@@ -64,7 +64,7 @@
 - name: Enable autorenew every day [without firewall]
   cron:
     name: letsencrypt
-    cron_file: /etc/crontab
+    cron_file: ../../etc/crontab
     user: root
     minute: 21
     hour: 1
@@ -76,7 +76,7 @@
 - name: Enable autorenew every day [with ingress firewall]
   cron:
     name: letsencrypt
-    cron_file: /etc/crontab
+    cron_file: ../../etc/crontab
     user: root
     minute: 21
     hour: 1
